@@ -79,9 +79,7 @@ namespace Full_GRASP_And_SOLID
 
         public void Cook()
         {
-            ClienteTimer cliente = new ClienteTimer(this);
-            CountdownTimer countdownTimer = new CountdownTimer();
-            countdownTimer.Register(GetCookTime(),cliente);
+            ClienteTimer cliente = new ClienteTimer(this,GetCookTime());
         }
     }
 }
