@@ -33,6 +33,7 @@ namespace Full_GRASP_And_SOLID
             printer = new FilePrinter();
             printer.PrintRecipe(recipe);
 
+            // Utilizamos el patron de diseño Adapter
             Console.WriteLine($"Cooked: {recipe.Cooked}");
             recipe.Cook();
             Thread.Sleep(500); // 0.5 segundos
