@@ -35,7 +35,7 @@ namespace Full_GRASP_And_SOLID
 
             // Utilizamos el patron de diseño Adapter, pero tambien utilizamos el patron SRP ya que asi cada clase tedra solo una responsabilidad 
             // y Low Coupling & High Cohesion ya que buscamos promover poca dependencia entre las clases entonces lo que hacemos es, 
-            // en una claseuna clase crea un objeto de la otra clase internamente en un método.
+            // en una clase crea un objeto de la otra clase internamente en un método.
             Console.WriteLine($"Cooked: {recipe.Cooked}");
             recipe.Cook();
             Thread.Sleep(500); // 0.5 segundos
